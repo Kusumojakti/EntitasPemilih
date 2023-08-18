@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    tools:context=".fragment.HomeFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userPhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/user"
+        android:layout_marginTop="34dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo, Selamat Datang"
+        android:textColor="@color/grey_2"
+        android:textSize="14sp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/userPhoto"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aqsha Kusumojakti"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="63dp"
+        android:layout_toRightOf="@id/userPhoto"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="130dp">
+
+        <TextView
+            android:id="@+id/pilihKades"
+            android:layout_width="166dp"
+            android:layout_height="120dp"
+            android:text="Buat Pemilih Kades"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="25dp"
+            android:background="@drawable/bg_yellow"/>
+
+        <TextView
+            android:id="@+id/kandidatKades"
+            android:layout_width="166dp"
+            android:layout_height="120dp"
+            android:text="Buat Kandidat Kades"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="19dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/bg_blue"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="279dp">
+
+        <TextView
+            android:id="@+id/riwayatpemilihanKades"
+            android:layout_width="166dp"
+            android:layout_height="120dp"
+            android:text="Riwayat Pemilihan"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="25dp"
+            android:background="@drawable/bg_blue"/>
+
+        <TextView
+            android:id="@+id/buatAkunPanitia"
+            android:layout_width="166dp"
+            android:layout_height="120dp"
+            android:text="Buat Akun Panitia"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="19dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/bg_yellow"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnLihatPemilihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_lihat"
+        android:text="Lihat Hasil Pemilihan"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"/>
+</RelativeLayout>

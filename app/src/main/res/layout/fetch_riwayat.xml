@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fetch_riwayat_pemilih"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_riwayat"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/textDaerah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desa Umbulharjo"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"/>
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sedang berlangsung proses pemilihan"
+        android:textColor="@color/grey_2"
+        android:textSize="10dp"
+        android:layout_below="@id/textDaerah"
+        android:layout_marginStart="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_status"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/statusbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belom"
+            android:textSize="8sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/timeStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Jam yang lalu"
+        android:textSize="10sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="20dp"/>
+
+</RelativeLayout>

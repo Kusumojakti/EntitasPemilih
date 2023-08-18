@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp"
+        tools:context=".fragment.SettingFragment">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photoProfile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/txtNameSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sella Fransisca"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5210411379"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banjarsari, Kb. Dalem Kidul, Kec. Prambanan, Kabupaten Klaten, Jawa Tengah 57454"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingHorizontal="60dp"
+                android:textColor="@color/grey_2"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="35dp"
+            android:elevation="1dp"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/bg_expand"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/key"
+                android:text="Ubah Verifikasi Kata Sandi"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/key"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_key"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/btnRiwayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:elevation="1dp"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/bg_expand"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Profile"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/person"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/person"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_person"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:elevation="1dp"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/bg_expand"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar Akun Panitia"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@id/group"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/group"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_people"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:elevation="1dp"
+            android:layout_marginHorizontal="2dp"
+            android:background="@drawable/bg_expand"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@id/logout"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_logout"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
